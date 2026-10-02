@@ -79,6 +79,15 @@ if (loginForm) {
 
     if (!valid) return;
 
+    const adminEmail = 'arthur.macedo1323@gmail.com';
+    const adminPassword = 'antartida';
+
+    if (email.value.trim().toLowerCase() === adminEmail.toLowerCase() && password.value === adminPassword) {
+      alert('Login de administrador realizado com sucesso!');
+      window.location.href = 'cms-admin.html';
+      return;
+    }
+
     alert('Login validado com sucesso!');
   });
 }
