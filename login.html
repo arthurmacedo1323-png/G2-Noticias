@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G2 - Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth-page">
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">G2</a>
+        <a href="index.html" class="back-link">Voltar para notícias</a>
+      </div>
+    </header>
+
+    <main class="auth-container">
+      <section class="auth-box">
+        <div class="auth-header">
+          <span class="section-label">G2</span>
+          <h1>Entrar</h1>
+          <p>Acesse sua conta para continuar.</p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="login-email">E-mail</label>
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            />
+            <small id="login-email-error" class="form-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Senha</label>
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+              required
+              minlength="6"
+            />
+            <small id="login-password-error" class="form-error"></small>
+          </div>
+
+          <div class="form-options">
+            <label class="checkbox-label">
+              <input type="checkbox" name="remember" />
+              <span>Lembrar de mim</span>
+            </label>
+            <a href="#">Esqueci minha senha</a>
+          </div>
+
+          <button type="submit" class="primary-button">Entrar</button>
+
+          <div class="auth-footer">
+            <span>Ainda não possui uma conta?</span>
+            <a href="cadastro.html">Criar cadastro</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G2 - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth-page">
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">G2</a>
+        <a href="index.html" class="back-link">Voltar para notícias</a>
+      </div>
+    </header>
+
+    <main class="auth-container">
+      <section class="auth-box auth-box-large">
+        <div class="auth-header">
+          <span class="section-label">G2</span>
+          <h1>Criar cadastro</h1>
+          <p>Crie sua conta para acessar o portal.</p>
+        </div>
+
+        <form id="register-form" novalidate>
+          <div class="form-group">
+            <label for="register-name">Nome completo</label>
+            <input
+              type="text"
+              id="register-name"
+              name="name"
+              placeholder="Digite seu nome completo"
+              autocomplete="name"
+              required
+              minlength="3"
+            />
+            <small id="register-name-error" class="form-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="register-email">E-mail</label>
+            <input
+              type="email"
+              id="register-email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            />
+            <small id="register-email-error" class="form-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="register-region">Região</label>
+            <select id="register-region" name="region" required>
+              <option value="">Selecione sua região</option>
+              <option value="Norte">Norte</option>
+              <option value="Nordeste">Nordeste</option>
+              <option value="Centro-Oeste">Centro-Oeste</option>
+              <option value="Sudeste">Sudeste</option>
+              <option value="Sul">Sul</option>
+            </select>
+            <small id="register-region-error" class="form-error"></small>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="register-password">Senha</label>
+              <input
+                type="password"
+                id="register-password"
+                name="password"
+                placeholder="Mínimo de 6 caracteres"
+                autocomplete="new-password"
+                required
+                minlength="6"
+              />
+              <small id="register-password-error" class="form-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="register-confirm-password">Confirmar senha</label>
+              <input
+                type="password"
+                id="register-confirm-password"
+                name="confirmPassword"
+                placeholder="Repita sua senha"
+                autocomplete="new-password"
+                required
+              />
+              <small id="register-confirm-password-error" class="form-error"></small>
+            </div>
+          </div>
+
+          <label class="terms-label">
+            <input type="checkbox" id="register-terms" required />
+            <span>Concordo com os termos de uso e política de privacidade.</span>
+          </label>
+
+          <button type="submit" class="primary-button">Criar conta</button>
+
+          <div class="auth-footer">
+            <span>Já possui uma conta?</span>
+            <a href="login.html">Fazer login</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

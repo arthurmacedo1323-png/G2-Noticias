@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G2 - CMS Admin</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <div class="admin-header-container">
+        <div class="admin-title">CMS G2 Notícias</div>
+        <a href="index.html" class="admin-site-link">Ver site</a>
+      </div>
+    </header>
+
+    <div class="admin-layout">
+      <aside class="admin-sidebar">
+        <div class="admin-sidebar-title">
+          <strong>Admin</strong>
+          <span>Gestão do portal</span>
+        </div>
+
+        <nav class="admin-navigation">
+          <button type="button" class="admin-nav-button active" data-admin-section="dashboard">
+            Dashboard
+          </button>
+          <button type="button" class="admin-nav-button" data-admin-section="articles">
+            Matérias
+          </button>
+          <button type="button" class="admin-nav-button" data-admin-section="settings">
+            Configurações
+          </button>
+        </nav>
+      </aside>
+
+      <main class="admin-main">
+        <section id="admin-dashboard" class="admin-section active">
+          <div class="admin-section-header">
+            <span class="section-label">Painel</span>
+            <h1>Dashboard</h1>
+          </div>
+
+          <div class="admin-cards">
+            <div class="admin-card">
+              <span>Total de matérias</span>
+              <strong>128</strong>
+            </div>
+            <div class="admin-card">
+              <span>Visualizações</span>
+              <strong>24.8k</strong>
+            </div>
+            <div class="admin-card">
+              <span>Usuários online</span>
+              <strong>184</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="admin-articles" class="admin-section">
+          <div class="admin-section-header">
+            <span class="section-label">Conteúdo</span>
+            <h1>Cadastrar matéria</h1>
+          </div>
+
+          <form id="article-form" class="admin-form">
+            <div class="form-group">
+              <label for="article-title">Título da matéria</label>
+              <input type="text" id="article-title" name="title" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="article-category">Categoria</label>
+                <select id="article-category" name="category">
+                  <option value="">Selecione</option>
+                  <option value="Brasil">Brasil</option>
+                  <option value="Economia">Economia</option>
+                  <option value="Política">Política</option>
+                  <option value="Tecnologia">Tecnologia</option>
+                  <option value="Saúde">Saúde</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="article-region">Região</label>
+                <select id="article-region" name="region">
+                  <option value="">Selecione</option>
+                  <option value="Brasil">Brasil</option>
+                  <option value="Norte">Norte</option>
+                  <option value="Nordeste">Nordeste</option>
+                  <option value="Sudeste">Sudeste</option>
+                  <option value="Sul">Sul</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="article-description">Descrição</label>
+              <textarea id="article-description" name="description"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="article-content">Conteúdo completo</label>
+              <textarea id="article-content" name="content"></textarea>
+            </div>
+
+            <button type="submit" class="primary-button">Salvar matéria</button>
+          </form>
+        </section>
+
+        <section id="admin-settings" class="admin-section">
+          <div class="admin-section-header">
+            <span class="section-label">Sistema</span>
+            <h1>Configurações</h1>
+          </div>
+
+          <form id="settings-form" class="admin-form">
+            <div class="form-group">
+              <label for="site-name">Nome do portal</label>
+              <input type="text" id="site-name" name="siteName" placeholder="G2 Notícias" />
+            </div>
+
+            <button type="submit" class="primary-button">Salvar configurações</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

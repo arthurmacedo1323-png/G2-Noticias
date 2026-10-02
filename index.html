@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="G2 Notícias - Portal de notícias com informações em destaque"
+    />
+    <title>G2 Notícias</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">G2</a>
+
+        <div class="header-actions">
+          <label for="regiao" class="sr-only">Selecionar região</label>
+          <select id="regiao" class="region-select">
+            <option value="Brasil">Brasil</option>
+            <option value="Norte">Norte</option>
+            <option value="Nordeste">Nordeste</option>
+            <option value="Centro-Oeste">Centro-Oeste</option>
+            <option value="Sudeste">Sudeste</option>
+            <option value="Sul">Sul</option>
+          </select>
+
+          <a href="login.html" class="login-button">Entrar</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-navigation">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="#" class="nav-link">Brasil</a>
+        <a href="#" class="nav-link">Economia</a>
+        <a href="#" class="nav-link">Política</a>
+        <a href="#" class="nav-link">Esportes</a>
+        <a href="#" class="nav-link">Tecnologia</a>
+        <a href="#" class="nav-link">Saúde</a>
+        <a href="#" class="nav-link">Cultura</a>
+      </div>
+    </nav>
+
+    <main class="container page-content">
+      <section class="page-heading">
+        <div>
+          <span class="section-label">G2 NOTÍCIAS</span>
+          <h1>Últimas notícias</h1>
+          <p id="region-description">Principais notícias do Brasil</p>
+        </div>
+      </section>
+
+      <section class="featured-news">
+        <article class="featured-main">
+          <img
+            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=80"
+            alt="Jornal e notícias"
+          />
+          <div class="featured-overlay">
+            <span class="category">Destaque</span>
+            <h2>G2 apresenta seu novo portal de notícias e informação</h2>
+            <p>
+              Acompanhe os principais acontecimentos do Brasil e do mundo em um
+              só lugar.
+            </p>
+          </div>
+        </article>
+
+        <div class="featured-side">
+          <article class="side-news">
+            <img
+              src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=800&q=80"
+              alt="Economia"
+            />
+            <div class="side-news-content">
+              <span class="category">Economia</span>
+              <h3>Mercado acompanha novas movimentações econômicas</h3>
+            </div>
+          </article>
+
+          <article class="side-news">
+            <img
+              src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
+              alt="Esportes"
+            />
+            <div class="side-news-content">
+              <span class="category">Esportes</span>
+              <h3>Principais acontecimentos do mundo esportivo</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="articles-section">
+        <div class="section-title">
+          <h2>Mais notícias</h2>
+          <span>8 matérias</span>
+        </div>
+
+        <div class="articles-grid">
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+              alt="Cidade"
+            />
+            <div class="article-content">
+              <span class="category">Brasil</span>
+              <h3>Novas iniciativas movimentam cidades brasileiras</h3>
+              <p>Projetos e novidades ganham destaque em diferentes regiões.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+              alt="Tecnologia"
+            />
+            <div class="article-content">
+              <span class="category">Tecnologia</span>
+              <h3>Tecnologia transforma a rotina de empresas</h3>
+              <p>Ferramentas digitais modificam processos e serviços.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80"
+              alt="Saúde"
+            />
+            <div class="article-content">
+              <span class="category">Saúde</span>
+              <h3>Hábitos saudáveis ganham espaço na rotina</h3>
+              <p>Especialistas destacam práticas importantes para a qualidade de vida.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+              alt="Trabalho"
+            />
+            <div class="article-content">
+              <span class="category">Trabalho</span>
+              <h3>Empresas adotam novas formas de trabalho</h3>
+              <p>Novos modelos continuam sendo adotados por empresas.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=800&q=80"
+              alt="Meio ambiente"
+            />
+            <div class="article-content">
+              <span class="category">Meio Ambiente</span>
+              <h3>Projetos ambientais buscam preservar áreas naturais</h3>
+              <p>Ações de conservação são realizadas em diferentes localidades.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+              alt="Educação"
+            />
+            <div class="article-content">
+              <span class="category">Educação</span>
+              <h3>Educação digital amplia acesso ao conhecimento</h3>
+              <p>Novas plataformas oferecem oportunidades de aprendizagem.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+              alt="Ciência"
+            />
+            <div class="article-content">
+              <span class="category">Ciência</span>
+              <h3>Pesquisadores apresentam novos resultados</h3>
+              <p>Estudos recentes ampliam o conhecimento científico.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80"
+              alt="Cultura"
+            />
+            <div class="article-content">
+              <span class="category">Cultura</span>
+              <h3>Agenda cultural reúne atrações em diversas cidades</h3>
+              <p>Eventos movimentam a programação cultural de diferentes regiões.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div>
+          <div class="footer-logo">G2</div>
+          <p>Informação, notícia e conteúdo.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="cms-admin.html">CMS Admin</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 G2 - Portal de Notícias</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
